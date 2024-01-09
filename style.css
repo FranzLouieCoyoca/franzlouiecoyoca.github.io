@@ -1,0 +1,235 @@
+body {
+    background-color: brown;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: 0.3s ease;
+    background-color: green;
+    animation: rotateText 5s;
+}
+
+
+header:hover {
+    background-color: green;
+    color: black;
+    text-align: center;
+    animation: rotateText 2s;
+}
+main {
+          background-color: orange; 
+          transition: box-shadow 0.3s;
+          max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: Yellow;
+        }
+
+        main:hover {
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+
+        li {
+            list-style: none;
+            padding: 10px 20px;
+            transition: background-color 0.3s;
+            border-radius: 10px;
+        }
+
+        li:hover {
+            background-color: #f0f0f0;
+            
+        }
+
+        a:hover {
+            color: black;
+        }
+
+        
+header {
+    background-color: burlywood;
+    color: #fff;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+}
+
+li {
+}
+
+a {
+    text-decoration: green;
+    color: #fff;
+}
+
+section {
+    padding: 20px;
+    transition: background-color
+}
+
+#home {
+    text-align: center;
+}
+
+.recipes {
+    align-items: center;
+}
+
+.featured-recipes {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+.recipe {
+    width: 50%;
+    border-radius:20px;
+}
+
+.recipe img {
+    width: 50%;
+    border-radius:20px;
+}
+
+.recipe1 {
+    width: 50%;
+    border-radius:20px;
+}
+
+.recipe1 img {
+    width: 50%;
+    border-radius:20px;
+}
+
+#contact h2 {
+    text-align: center;
+}
+
+#contact form {
+    width: 25%;
+    top: 0;
+    left:0;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 10px;
+}
+
+#contact label {
+    margin-left: 1px;
+}
+
+#contact button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+#contact button:hover {
+    background-color: rgb(1, 49, 1);
+    color: lime;
+}
+
+footer {
+    bottom: 0;
+    padding: 2px 0;
+    width: 100%;
+    background-color: darkgreen;
+    color: white;
+    text-align: center;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+@media (max-width: 660px) {
+    nav {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .featured-recipes {
+        display: ;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .recipe1, .recipe  {
+        width: 80%;
+    }
+
+    .recipe1 img, .recipe img {
+        width: 80%;
+    }
+
+    
+
+    #contact {
+        top: 0;
+        left: 0;
+        margin: 0 auto;
+    }
+
+
+    footer p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 360px) {
+    nav {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .featured-recipes {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .recipes {
+        background-color: aqua;
+    }
+
+    .recipe1 img {
+        width: 100%;
+    }
+
+    .recipe img {
+        width: 100%;
+    }
+    
+    
+    .recipes h1 {
+        align-items: center;
+    }
+
+    #contact {
+        top: 0;
+        left: 0;
+        margin: 0 auto;
+    }
+
+    #contact form {
+        width: 70%;
+    }
+
+
+    footer p {
+        font-size: 15px;
+    }
+}
