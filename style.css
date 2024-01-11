@@ -22,10 +22,12 @@ main {
             margin: 20px auto;
             padding: 20px;
             background-color: Yellow;
+            text-align: center;
         }
 
         main:hover {
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            text-align: center;
         }
 
         li {
@@ -33,23 +35,30 @@ main {
             padding: 10px 20px;
             transition: background-color 0.3s;
             border-radius: 10px;
+            text-align: center;
         }
 
         li:hover {
             background-color: #f0f0f0;
-            
+            text-align: center;
         }
+            
+        
 
         a:hover {
             color: black;
+            text-align: center;
         }
+        
 
         
 header {
     background-color: burlywood;
     color: #fff;
     padding: 10px;
+    text-align: center;
 }
+
 
 nav {
     display: flex;
@@ -65,7 +74,9 @@ nav {
 ul {
     list-style-type: none;
     display: flex;
+    text-align: center;
 }
+
 
 li {
 }
@@ -73,46 +84,60 @@ li {
 a {
     text-decoration: green;
     color: #fff;
+    text-align: center;
+}
 }
 
 section {
     padding: 20px;
     transition: background-color
+    
 }
+
 
 #home {
     text-align: center;
+    text-align: center;
 }
-
 .recipes {
     align-items: center;
+    text-align: center;
 }
-
 .featured-recipes {
     display: flex;
     flex-flow: row;
     flex-wrap: wrap;
     padding: 0 20px;
+    text-align: center;
+}
+
+.recipe:hover img {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
 }
 
 .recipe {
     width: 50%;
     border-radius:20px;
+    text-align: center;
 }
 
 .recipe img {
     width: 50%;
     border-radius:20px;
+    text-align: center;
 }
 
 .recipe1 {
     width: 50%;
     border-radius:20px;
+    text-align: center;
 }
 
 .recipe1 img {
     width: 50%;
     border-radius:20px;
+    text-align: center;
 }
 
 #contact h2 {
@@ -162,7 +187,7 @@ footer {
     }
 
     .featured-recipes {
-        display: ;
+        display: flex;
         flex-flow: column;
         align-items: center;
     }
@@ -232,4 +257,7 @@ footer {
     footer p {
         font-size: 15px;
     }
+    
+    <a href="https://www.delightfoods.com/" class="cta-button">Discover More</a>
+    
 }

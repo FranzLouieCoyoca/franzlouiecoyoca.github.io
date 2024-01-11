@@ -6,45 +6,46 @@
     <link rel="stylesheet" href="styles.css">
     <title>Your Food Website</title>
     <link rel="stylesheet" href="style.css">
+        
 </head>
 <body>
-
+        
     <header>
         <nav>
-            <div class="logo">WELCOME TO OUR CLASSY FOOD</div>
+            <h1 class="exciting-text">✨ Dessert Delights 🍰</h1>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#recipes">Recipes</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home" onclick="scrollToSection('#home')">Home</a></li>
+                <li><a href="#recipes" onclick="scrollToSection('#recipes')">Recipes</a></li>
+                <li><a href="#contact" onclick="scrollToSection('#contact')">Contact</a></li>
             </ul>
+
         </nav>
     </header>
-
     <section id="home">
         <h1>Welcome to Your Food Journey</h1>
         <p>Explore delicious recipes and culinary delights!</p>
     </section>
-
 <section id="recipes">
-    <h2>Featured Recipes</h2>
-    <div class="featured-recipes">
-        <div class="recipe1">
-            <img src="pasta.jpg" alt="Recipe 1">
-            <img src="pasta with garlic.jpg" alt="Recipe 1">
-            
-            <h3>Delicious Pasta</h3>
+     <h2>Featured Recipes</h2>
+    <div class="featured-recipe">
+        <div class="recipe">
+
+            <img src="pasta.jpg" alt=" Recipe 1">
+            <img src="pasta with garlic.jpg" alt= "Recipe 1">
+             <h3>Delicious Pasta</h3>
             <p>A mouth-watering pasta dish that you'll love!</p>
         </div>
+        
         <div class="recipe">
             <img src="chocolate cake.jpg" alt="Recipe 2">
             <img src="moist chocolate.jpg" alt="Recipe 2">
-            <h3>Chocolate Cake</h3>
-            <p>Indulge in the rich taste of this chocolate cake.</p>
+             <h3>Chocolate Cake</h3>
+            <p> Indulge in the rich and fudgy goodness of our signature chocolate brownie. It's a
+                chocolate lover's dream come true!</p>
         </div>
         
     </div>
 </section>
-
 
 
     </section>
@@ -61,12 +62,26 @@
             <label for="message">Message:</label>
             <textarea id="message" name="message" required></textarea>
             <button type="submit">Submit</button>
+
+            <a href="https://www.delightfoods.com/" class="cta-button">Discover More</a>
         </form>
     </section>
+
+    
 
     <footer>
         <p>&copy; 2024 Your Food Website. All rights reserved.</p>
     </footer>
+    <script>
+        // Function to smoothly scroll to a section
+        function scrollToSection(sectionId) {
+            var section = document.querySelector(sectionId);
+            window.scrollTo({
+                top: section.offsetTop,
+                behavior: 'smooth'
+            });
+        }
+    </script>
 
 </body>
 </html>
